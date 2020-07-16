@@ -1,3 +1,17 @@
+/* body {
+  background-color: #fce1e0
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 300;
+ }
+ 
+ h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+ } */
+
+ /* Background color: #fce1e0
+Text color: #f03f35 */
+
 .App {
   text-align: center;
 }
@@ -6,6 +20,31 @@
   height: 40vmin;
   pointer-events: none;
 }
+
+.ivana-logo {
+  width: 40px;
+}
+
+/* nav.border-bottom {
+  background-color: #ff4936 !important;
+} */
+
+/* .justify-content-center {
+  justify-content: center !important;
+  background-color: #ff4936;
+} */
+
+.display-1 {
+  color: #f5d3cc;
+}
+
+.display-4 {
+  font-size: 2.3rem !important;
+}
+
+/* .lead {
+  color: white;
+} */
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
