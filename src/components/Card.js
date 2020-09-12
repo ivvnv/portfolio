@@ -11,6 +11,7 @@ function Card(props) {
           title={props.item.title}
           subTitle={props.item.subTitle}
           link={props.item.link}
+          link2={props.item.link2}
         />
       )}
     </div>

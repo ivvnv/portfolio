@@ -1,18 +1,14 @@
-import React from 'react';
-import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
-import Container from 'react-bootstrap/Container';
-import Navbar from 'react-bootstrap/Navbar';
-import Nav from 'react-bootstrap/Nav';
+import React, { Component } from 'react';
+import {BrowserRouter as Router, Route} from 'react-router-dom';
 import './App.css'
 
-import Footer from './components/Footer'
+import LandingPage from './pages/LandingPage'
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
 
 
-
-class App extends React.Component {
+class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -20,51 +16,35 @@ class App extends React.Component {
       headerLinks: [
         { title: "Home", path: "/" },
         { title: "About", path: "/about" },
-        { title: "Contacto", path: "/contact" },
+        { title: "Contact", path: "/contact" },
       ],
       home: {
-        title: "#unachicaentech",
-        subtitle: "Construcción desde el autoaprendizaje",
-        text: "Puedes revisar mis proyectos a continuación ↓",
+        title: "#girlontech",
+        subtitle: "Building the future from within",
+        text: "You can check out my projects below ↓",
       },
       about: {
-        title: "Acerca de mí",
+        title: "hi there!",
       },
       contact: {
-        title: "Contáctate conmigo",
+        title: "let's catch up",
+        text: "To contact me or see all my work and experiences, check out my socials down here",
       },
     };
   }
   render() {
     return (
       <Router>
-        <Container className="p-0" fluid={true}>
-          <Navbar className="border-bottom" bg="transparent" expand="lg">
-            <Navbar.Brand><img src="http://placehold.it/150x50?text=Logo" alt=""/></Navbar.Brand>
-
-            <Navbar.Toggle className="border-0" aria-controls="navbar-toggle" />
-            <Navbar.Collapse id="navbar-toggle">
-              <Nav className="ml-auto">
-                <Link className="nav-link" to="/">
-                  Home
-                </Link>
-                <Link className="nav-link" to="/about">
-                  About
-                </Link>
-                <Link className="nav-link" to="/contact">
-                  Contacto
-                </Link>
-              </Nav>
-            </Navbar.Collapse>
-          </Navbar>
-
-          <Route path='/' exact render={() => <HomePage title={this.state.home.title} subtitle={this.state.home.subtitle} text={this.state.home.text} />} />
-          <Route path='/about' exact render={() => <AboutPage title={this.state.about.title}  />} />
-          <Route path='/contact' exact render={() => <ContactPage title={this.state.home.title}  />} />
-
-          <Footer />
-
-        </Container>
+       <Route path='/' exact render={() => <LandingPage/> } />
+          
+          
+          <Route path='/home' exact render={() => <HomePage subtitle={this.state.home.subtitle} text={this.state.home.text} />} />
+          <Route path='/about' exact render={() => <AboutPage title={this.state.about.title} />} />
+          <Route path='/contact' exact render={() => <ContactPage title={this.state.contact.title} text={this.state.contact.text} />} />
+      
+        {/* <Footer /> */}
+        {/* </Container> */}
+        
       </Router>
     );
   }

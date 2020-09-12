@@ -5,6 +5,7 @@ import Card from '../components/Card';
 import decibel from '../assets/images/decibel.png'
 import hpwizardsunite from '../assets/images/hpwizardsunite.png';
 import burgerqueen from '../assets/images/burgerqueen.png';
+import gav from '../assets/images/ganemosleav.png';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 
@@ -15,27 +16,39 @@ class Carousel extends React.Component {
       items: [
         {
           id: 0,
-          title: "Decibel Card Validator",
-          subTitle: "Validador de tarjeta de crédito en plataforma ficticia",
-          imgSrc: decibel,
-          link: "https://ivvnv.github.io/SCL013-card-validation/src/index.html",
+          title: "Ganémosle al Virus",
+          subTitle: "PWA that provides info about COVID-19 for children",
+          imgSrc: gav,
+          link: "https://github.com/ivvnv/GanemosleAlVirus",
+          link2: "https://trusting-jepsen-2abf56.netlify.app/",
           selected: false,
         },
         {
           id: 1,
-          title: "Guía para el Novato Absoluto",
-          subTitle:
-            "Manual por personajes del juego mobile Harry Potter: Wizards Unite",
-          imgSrc: hpwizardsunite,
-          link: "https://ivvnv.github.io/SCL013-data-lovers/src/index.html",
+          title: "Burger Queen",
+          subTitle: "Ordering app for waiters and kitchen staff",
+          imgSrc: burgerqueen,
+          link: "https://github.com/ivvnv/SCL013-burger-queen",
+          link2: "https://burgerqueen-615be.web.app/",
           selected: false,
         },
         {
           id: 2,
-          title: "Burger Queen",
-          subTitle: "App interna para la toma de órdenes de una hamburguesería",
-          imgSrc: burgerqueen,
-          link: "https://github.com/garrettlove8/evverest",
+          title: "Guía para el Novato Absoluto",
+          subTitle:
+            "Sorting platform for game Harry Potter: Wizards Unite",
+          imgSrc: hpwizardsunite,
+          link: "https://ivvnv.github.io/SCL013-data-lovers",
+          link2: "https://ivvnv.github.io/SCL013-data-lovers/src/index.html",
+          selected: false,
+        },
+        {
+          id: 3,
+          title: "Decibel Card Validator",
+          subTitle: "Credit card validating system exercise",
+          imgSrc: decibel,
+          link: "https://github.com/ivvnv/SCL013-card-validation",
+          link2: "https://ivvnv.github.io/SCL013-card-validation/src/index.html",
           selected: false,
         },
       ],

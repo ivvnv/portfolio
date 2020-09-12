@@ -1,16 +1,8 @@
-/* body {
-  background-color: #fce1e0
+body {
+  background-color: #fce1e0;
   font-family: 'Work Sans', sans-serif;
   font-weight: 300;
  }
- 
- h1, h2, h3, h4, h5, h6 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 900;
- } */
-
- /* Background color: #fce1e0
-Text color: #f03f35 */
 
 .App {
   text-align: center;
@@ -19,10 +11,6 @@ Text color: #f03f35 */
 .App-logo {
   height: 40vmin;
   pointer-events: none;
-}
-
-.ivana-logo {
-  width: 40px;
 }
 
 /* nav.border-bottom {
@@ -34,12 +22,34 @@ Text color: #f03f35 */
   background-color: #ff4936;
 } */
 
+/* .container-title {
+  width: 100%;
+min-width: 50%;
+background-color: red;
+} */
+
 .display-1 {
-  color: #f5d3cc;
+  color: #EAE6F5; /*color de titulos*/
+  /* font-size: 4em !important; */
 }
 
 .display-4 {
-  font-size: 2.3rem !important;
+  font-size: 2.6rem !important;
+  background: -webkit-linear-gradient(0deg, rgb(173, 209, 248) 0%, rgba(246,190,246,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.display-5 {
+color: #4e4e4e;
+}
+
+.ivana-logo {
+  opacity:0.7;
+}
+
+.ivana-logo:hover {
+  opacity:0.9;
 }
 
 /* .lead {
@@ -47,6 +57,12 @@ Text color: #f03f35 */
 } */
 
 @media (prefers-reduced-motion: no-preference) {
+
+  /* .display-1 {
+   text-align: center !important;
+    font-size: 3.2em !important;
+  } */
+
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
